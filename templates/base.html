@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock%}</title>
+    <script src="http://unpkg.com/jquery"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/stories">Stories</a>
+    </nav>
+    <main id="content">
+        <h1>Madlibs</h1>
+        {% block content %}BODY CONTENT{% endblock %}
+    </main>
+
+</body>
+</html>
