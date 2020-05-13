@@ -3,4 +3,36 @@
 
 {% block content %}
     <h1>Madlibs</h1>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="input_place">Place</label>
+                <input type="text" class="form-control" id="input_place">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="input_noun">Noun</label>
+                <input type="text" class="form-control" id="input_noun">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="input_verb">Verb</label>
+                <input type="text" class="form-control" id="input_verb">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="input_adjective">Adjective</label>
+                <input type="text" class="form-control" id="input_adjective">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="input_plural_noun">Plural Noun</label>
+                <input type="text" class="form-control" id="input_plural_noun">
+            </div>
+            <div class="form-group col-md-6">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
+        </div>
+
 {% endblock %}
