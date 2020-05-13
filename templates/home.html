@@ -5,34 +5,19 @@
     <h1>Madlibs</h1>
 
     <form action="/stories">
-        <div class="form-row">
+        {% for promt in promts %}
             <div class="form-group col-md-6">
-                <label for="place">Place</label>
+                <label for="{{ promt }}">{{ promt }}</label>
                 <input type="text" class="form-control" id="place">
             </div>
-            <div class="form-group col-md-6">
-                <label for="noun">Noun</label>
-                <input type="text" class="form-control" id="noun">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="verb">Verb</label>
-                <input type="text" class="form-control" id="verb">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="adjective">Adjective</label>
-                <input type="text" class="form-control" id="adjective">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="plural_noun">Plural Noun</label>
-                <input type="text" class="form-control" id="plural_noun">
-            </div>
-            <div class="form-group col-md-6">
-                <input class="btn btn-primary" type="submit" value="Submit">
-            </div>
-        </div>
+        {% endfor %}
+{#            <div class="form-group col-md-6">#}
+{#                <label for="noun">Noun</label>#}
+{#                <input type="text" class="form-control" id="noun" readonly>#}
+{#            </div>#}
 
+        <div class="form-group col-md-6">
+            <input class="btn btn-primary" type="submit" value="Submit" readonly>
+        </div>
+    </form>
 {% endblock %}
