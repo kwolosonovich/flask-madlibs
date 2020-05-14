@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Create Madlibs{% endblock %}
+
+{% block content %}
+    <h1>Madlibs</h1>
+
+    <form action="/story">
+        {% for prompt in prompts %}
+            <div class="form-group col-md-6">
+                <label for="{{ prompt }}">{{ prompt }}</label>
+                <input type="text" class="form-control" id="{{ prompt }}" name="{{ prompt }}">
+            </div>
+        {% endfor %}
+        <div class="form-group col-md-6">
+            <input class="btn btn-primary" type="submit" value="Submit" readonly>
+        </div>
+    </form>
+{% endblock %}
