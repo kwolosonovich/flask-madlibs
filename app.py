@@ -9,8 +9,7 @@ app.config['SECRET_KEY'] = "secret"
 
 @app.route('/')
 def index():
-    """Return homepage."""
-    # story = Story()
+    """Return homepage with questions form story"""
     prompts = story.prompts
     return render_template("home.html", prompts=prompts)
 
@@ -18,4 +17,4 @@ def index():
 def my_stories():
     """stories page"""
     text = story.generate(request.args)
-    return render_template("stories.html", text=text)
+    return render_template("story.html", text=text)

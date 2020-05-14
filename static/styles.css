@@ -1,0 +1,31 @@
+body {
+    background-color: #f2f6f5;
+    color: #63707e;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.navbar {
+    justify-content: space-between;
+    color: #f2f6f5;
+    background-color: #63707e;
+    align-items: baseline;
+}
+
+.nav-link {
+    color: #f2f6f5;
+}
+
+.btn {
+    background-color: #93b5b3;
+    color: #f2f6f5;
+    border: 1px solid #c8dad3;
+}
+.btn:hover {
+    background-color: #c8dad3;
+    border: 1px solid #c8dad3;
+    color: #63707e;
+}
